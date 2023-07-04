@@ -90,8 +90,8 @@ const App = () => {
         {/* check if number is positiv */}
         <input type="number" id="days" name="days" min="1" ref={daysData} onChange={
           (e) => {
-            if (parseInt(e.target.value) < 1) {
-              e.target.value = '1'
+            if (parseInt(e.target.value) < 0) {
+              e.target.value = '0'
             }
           }
         } />
