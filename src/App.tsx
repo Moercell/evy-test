@@ -45,6 +45,8 @@ const App = () => {
       }
       )
 
+      handleReset() // if nessessary
+
   }
 
   const checkMail = (mail: string | undefined) => {
