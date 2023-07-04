@@ -1,0 +1,41 @@
+.form {
+    max-width: 500px;
+}
+
+.form input[type="text"], .form input[type="email"], .form input[type="number"], .month {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.form label {
+    margin-right: .5rem;
+}
+
+.form button:first-child {
+    margin-right: 1rem;
+}
+
+.mail {
+    position: relative;
+}
+
+.error {
+    background-color: tomato;
+    border-radius: 3px;
+    padding: .5rem;
+    position: absolute;
+    left: calc(100% + 1.5rem);
+    top: 30%;
+    width: max-content;
+}
+
+.error::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 10px);
+    left: -10px;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-right-color: tomato;
+
+}
